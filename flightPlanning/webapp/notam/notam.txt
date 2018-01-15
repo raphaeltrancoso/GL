@@ -1,0 +1,12 @@
+---------------------------------------------------------------------
+AIS NORWAY -   PREFLIGHT INFORMATION BULLETIN: 160307/0328
+               GENERAL BULLETIN
+               INCLUDES NOTAM VALID FROM: 070328   FOR: 24 HOUR(S)
+               HEIGHT: 000/999
+               PERM NOTAM CUTOFF: 365 DAY(S)
+               TRAFFIC: IV         PURPOSE: NBOM   SCOPE: AEW
+               SNOWTAM: YES        MET: METAR/TAF/SIGMET/ICE
+               IGA: NO
+---------------------------------------------------------------------
+
+>>> END-OF-BULLETIN <<<

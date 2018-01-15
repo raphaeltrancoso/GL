@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scheduled flights</title>
+    <meta name="description" content="Source code generated using my brain">
+    <meta name="author" content="MyBrain!">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/list.css" rel="stylesheet">
+    <link href='css/fontTitilliumWeb.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <script id="template-line-insertion" type="text/template">
+      <tr class="clickable-row" data-href="url://info.html">
+      <td><%= commercialNumber %></td>
+      <td><%= atcNumber %></td>
+      <td><%= airplane %></td>
+      <td><%= oaciDeparture %> - <%= oaciDestination %></td>
+      <td><%= departure %></td>
+      <td><%= arrivalTime %></td>
+      <td>
+        <img class="edit" alt="edit image" src="img/edit.svg"/>
+        <img class="delete" alt="delete image" src="img/delete.svg"/>
+      </td>
+      </tr>
+    </script>
+
+    <script id="template-line-insertion-member" type="text/template">
+      <tr class="clickable-row" data-href="url://info.html">
+      <td><%= commercialNumber %></td>
+      <td><%= oaciDeparture %> - <%= oaciDestination %></td>
+      <td><%= departure %></td>
+      <td><%= arrivalTime %></td>
+      </tr>
+    </script>
+
+    <nav id="menu">
+      <ul>
+        <li class="nav-item"><a href="add.html">Add flight</a></li>
+        <li class="nav-item"><a href="display" id="bSearch" value="display">Search</a></li>
+        <li class="nav-item" style="position: absolute;right:10px;">
+            <a id="logout" href="index.html">Log out</a>
+            <img src="img/logout.png" alt="logout" style="width:25px;height:20px;"/>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="search-container" style="display:none;">
+      <p>
+        <label>Commercial number</label>
+        <input id="comNb" type="text"/>
+        <label>Departure Airport</label>
+        <input id="oaciD" type="text"/>
+      </p>
+      <p>
+        <label>ATC number</label>
+        <input id="atcNb" type="text"/>
+        <label>Arrival airport</label>
+        <input id="oaciA" type="text"/>
+      </p>
+      <p>
+        <label>Departure Time</label>
+        <input id="timeD" type="text"/>
+        <label>To</label>
+        <input id="timeA" type="text"/>
+      </p>
+      <p>
+        <label>Plane</label>
+        <input id="plane" type="text"/>
+      </p>
+    </div>
+    <div = id='tableCCO'>
+      <table>
+        <thead>
+          <tr>
+            <th>Commercial N°</th>
+            <th>ATC N°</th>
+            <th>Airplane</th>
+            <th>D/A airport</th>
+            <th>Departure time</th>
+            <th>Arrival time</th>
+            <th><img id="refresh" src="img/refresh.png" alt="refresh" style="width:25px;height:25px;"/></th>
+          </tr>
+        </thead>
+        <tbody class="table-content"></tbody>
+      </table>
+    </div>
+    <div = id='tableMember'>
+      <table>
+        <thead>
+          <tr>
+            <th>Commercial N°</th>
+            <th>D/A airport</th>
+            <th>Departure time</th>
+            <th>Arrival time</th>
+          </tr>
+        </thead>
+        <tbody class="table-content"></tbody>
+      </table>
+    </div>
+    <div class="pagination">
+      <div id="pagi-left">
+        <img src="img/arrow-bold-left.png" alt="left" style="width:25px;height:25px;"/>
+      </div>
+      <div id="pagi-center">
+        <p>
+          <input id="page" type="text"/><span><span>
+        </p>
+      </div>
+      <div id="pagi-right">
+        <img src="img/arrow-bold-right.png" alt="right" style="width:25px;height:25px;"/>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/underscore-min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment-with-locales.js"></script>
+    <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+    <script type="text/javascript" src="js/list.js"/></script>
+  </body>
+</html>

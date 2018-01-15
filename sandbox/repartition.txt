@@ -1,0 +1,23 @@
+Base de Donnée (Data Nucleous) :
+Lyes
+Mehdi (chef)
+
+REST (web-service):
+Aslam 
+Helmi (chef)
+Amine
+
+Interface graphique CCO:
+Karthik 
+Jordan (chef)
+Mahmoudou
+
+Interface graphique Equipage :
+Raphael
+Jordan (chef)
+Timera
+
+Systeme d'alerte :
+Bilel (chef)
+Raphael 
+

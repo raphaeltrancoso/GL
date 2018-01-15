@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+      	<meta name="viewport" content="width=device-width, initial-scale=1">
+      	<link rel="stylesheet" href="css/flightDetails.css">
+  </head>
+
+  <body>
+
+    	<div class="header">
+		<div class="page__inner">
+
+			<div id="tab-2" class="widget-sidebar widget_tab">
+				<div id="tabber">
+					<ul class="tabs">
+						<li><a class="selected" href="#flightDetails">Flight Details</a></li>
+						<li class=""><a href="#airplane">Airplane Details</a></li>
+						<li class=""><a href="#crew">Crew Details</a></li>
+					</ul> <!--end .tabs-->
+						
+					<div class="clear"></div>
+					<div class="inside">
+					
+						<div style="display: block;" id="flightDetails">
+							<div id="top-row">
+								<div class="page-title">
+									<span>Commercial Number</span>
+									<p id="commNumber"></p>
+								</div>
+								<div class="page-title">
+									<span>ATC</span>
+									<p id="atc"></p>
+								</div>
+							</div>
+							<div id="bottom-row">
+								<div id="dep">
+									<h1>Departure</h1>
+									<p>Departure Airport:</p>
+									<b><p id="deptAirport"></p></b>
+									<p class="space">Scheduled Departure:</p>
+									<b><p id="deptTime"></p></b>
+								</div>
+								<div id="arr">
+									<h1>Arrival</h1>
+									<p>Arrival Airport:</p>
+									<b><p id="arrAirport"></p></b>
+									<p class="space">Scheduled Arrival:</p>
+									<b><p id="arrTime"></p></b>
+								</div>
+							</div>
+					    </div> <!--end #flightDetails-->
+					       
+					    <div style="display: none;" id="airplane"> 
+					        <ul>
+								<li id="imgPlane">
+								</li>
+
+								<li>
+									<b><p id="type"></p></b>
+									<div class="clear"></div>
+								</li>
+
+								<li id="cap">
+								 	<p>Capacity :</p>
+									<p id="capa"></p>
+								</li>
+
+								<li id="poids">
+								 	<p>Weight :</p>
+									<p id="weight"></p>
+								</li>
+							</ul>	
+					    </div> <!--end #airplane-->
+
+					    <div style="display: none;" id="crew"> 
+								<div id="cockpit">
+									<ul>
+										<li>
+											<b><p>Pilot:</p></b>
+											<p id="pilot"></p>
+											<div class="clear"></div>
+										</li>
+										<li>
+											<b><p>Co-pilot:</p></b>
+											<p id="copilot"></p>
+											<div class="clear"></div>
+										</li>
+									</ul>
+								</div>
+
+								<li id="others">
+									<b><p>Stewarts/Hostesses:</p></b>
+									<p id="staff"></p>
+									<div class="clear"></div>
+								</li>
+							</ul>	
+					    </div> <!--end #crew-->
+						
+						<div style="display: none;" class="clear"></div>
+						
+					</div> <!--end .inside -->
+					
+					<div class="clear"></div>
+				
+				</div><!--end #tabber -->
+
+			</div><!-- ens #tab-2 -->
+
+		</div>
+	</div>
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script src="js/flightDetails.js" type="text/javascript"></script>    
+  </body>
+</html>

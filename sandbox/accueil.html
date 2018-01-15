@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="accueil.css" />
+    <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+    <title>Université Paris Diderot-Paris 7</title>
+  </head>
+  
+  <body>
+    <a href="http://www.univ-paris-diderot.fr">
+      <img id="logo" src="logo.jpg" alt="Logo de Paris 7" />
+    </a>
+    <section>
+      <h1>UP7D</h1>
+      <nav>
+	<ul id="liste">
+	  <li><a href="http://www.univ-paris-diderot.fr/sc/site.php?bc=formations&np=ACCUEIL">Formations</a></li>
+	  <li><a href="http://www.univ-paris-diderot.fr/sc/site.php?bc=recherche&np=ACCUEIL">Recherche</a></li>
+	  <li><a href="http://didel.script.univ-paris-diderot.fr">Didel</a></li>
+	  <li><a href="http://magma.informatique.univ-paris-diderot.fr:2201/~etudiant/">Magma</a></li>
+	  <li id="chat"><a href="">Mini-chat</a></li>
+	</ul>
+      </nav>
+      <div id="boite">
+	<img id="serveur" src="serveur.png" alt="Logo d'un serveur" />
+	  <p id="info-serv">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat feugiat eleifend. Etiam malesuada purus ac libero scelerisque, at placerat nunc mattis. In sapien tortor, viverra eu facilisis eu, pretium et magna. Vivamus blandit vulputate lacus. Suspendisse sem velit, placerat vitae ornare vel, scelerisque sed odio. Fusce quis bibendum libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam placerat feugiat eleifend. Etiam malesuada purus ac libero scelerisque, at placerat nunc mattis. In sapien tortor, viverra eu facilisis eu, pretium et magna. Vivamus blandit vulputate lacus. Suspendisse sem velit, placerat vitae ornare vel, scelerisque sed odio. Fusce quis bibendum libero.</p>
+      </div>
+      <form name="forme">
+      <label>Mettez une note d'appréciation du site de 1 à 10 :</label>
+	<select name="liste" id="note">
+	  <option value="1">1</option>
+	  <option value="2">2</option>
+	  <option value="3">3</option>
+	  <option value="4">4</option>
+	  <option value="5">5</option>
+	  <option value="6">6</option>
+	  <option value="7">7</option>
+	  <option value="8">8</option>
+	  <option value="9">9</option>
+	  <option value="10">10</option>
+	</select>
+	<span class="absolute">
+	  <input type="button" id="soumettre" value="Soumettre" class="cacher" />
+	  <input type="button" id="moyenne" value="Moyenne des notes" class="cacher" />
+	  <span id="moyenne2"></span>
+	</span>
+      </form>
+    </section>
+    <script src="accueil.js"></script>
+  </body>
+ <footer>
+  <p>Jean : <a href="mailto:jean@univ-paris-diderot.fr">jean@univ-paris-diderot.fr</a>.</p>
+  </footer>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Edit view</title>    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href='css/fontTitilliumWeb.css' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/chosen.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/edit.css">
+  </head>
+  
+    <nav id="menu">
+      <ul>
+        <li class="nav-item"><a href="list.html" >Home</a></li>
+        <li class="nav-item"><a href="add.html" >Add flight</a></li>
+        <li class="nav-item" style="position: absolute;right:10px;">
+            <a id="logout" href="index.html">Log out</a>
+            <img src="img/logout.png" alt="logout" style="width:25px;height:20px;"/>
+        </li>
+      </ul>
+    </nav>
+  <header>
+    <h1 class="logo"> </h1>
+  </header>
+
+  <body>
+
+  <body id="addView">
+
+    <div class="form">
+      
+      <ul class="tab-group">
+        <li id="tabRequired" class="tab active"><a href="#signup">Required</a></li>
+        <li id="tabOptional" class="tab"><a href="#login">Optional</a></li>
+      </ul>
+      
+      <div class="tab-content">
+        <div id="signup">   
+          <br/>
+          <form name="scheduledFlight" action="" method="">
+          <div class="top-row">
+            <div class="field-wrap">
+              <label class="active">
+                Commercial Number<span class="req">*</span>
+              </label>
+              <input id="CommNum" type="text" required readonly autocomplete="off" />
+            </div>
+        
+            <div class="field-wrap">
+              <label class="active">
+                ATC number<span class="req">*</span>
+              </label>
+              <input id="atc" type="text"required autocomplete="off"/>
+            </div>
+          </div>
+
+          <div class="top-row">
+            <div class="field-wrap">
+              <label class="active">
+                Departure Airport<span class="req">*</span>
+              </label>
+              <input type="text" id="depApt" readonly>
+              
+            </div>
+        
+            <div class="field-wrap">
+              <label class="active">
+                Arrival Airport<span class="req">*</span>
+              </label>
+              <input type="text" id="arrApt" readonly>
+              
+            </div>
+          </div>
+
+          <div class="field-wrap">
+              <label class="active">
+                Departure<span class="req">*</span>
+              </label>
+            <input id="plndDep" type="text"required readonly autocomplete="off"/>
+          </div>
+          
+          <div class="field-wrap">
+              <label class="active">
+                Arrival<span class="req">*</span>
+              </label>
+            <input id="plndArr" type="text"required autocomplete="off"/>
+          </div>
+          
+          <button type="button" class="button button-block"/>Edit flight</button>
+          
+          
+
+        </div>
+        
+        <div id="login">   
+          <br/>
+            <div class="field-wrap">
+            <label>
+              Airplane
+            </label>
+            <select id="selectAirplane" class="chosen-select-simple" data-placeholder="Airplane">
+              <option value=""></option>
+          </select>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Pilot
+            </label>
+            <select id="selectPilot" class="chosen-select-simple" data-placeholder="Pilot">
+              <option value=""></option>
+          </select>
+          </div>
+          
+          <div class="field-wrap">
+            <label>
+              Copilot
+            </label>
+            <select id="selectCopilot" class="chosen-select-simple" data-placeholder="Copilot">
+              <option value=""></option>
+            </select>
+          </div>
+
+          <div class="field-wrap">
+            <label>
+              Stewarts/Hostesses
+            </label>
+            <select name="staff" id="selectStaff" data-placeholder="Stewarts/Hostesses" class="chosen-select" multiple style="width:210px;">
+              <option value=""></option>
+              <option value="Alfred">Alfred</option>
+              <option value="Bruce">Bruce</option>
+              <option value="Eminem">Eminem</option>
+              <option value="Obama">Obama</option>
+            </select>
+          </div>
+
+          <button type="button" class="button button-block"/>Edit flight</button>
+          
+          </form>
+
+        </div>
+        
+      </div><!-- tab-content -->
+      
+</div> <!-- /form -->
+    
+    <script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+    <script type="text/javascript" src="js/edit.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/moment-with-locales.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+  <script type="text/javascript" src="js/chosen.jquery.js"></script>
+    </body>
+</html>

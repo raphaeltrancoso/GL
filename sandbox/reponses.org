@@ -1,0 +1,79 @@
+* Question 1 (French and English translation) :
+** French
+Le systeme gere des vols qui peuvent etre édités de différentes façons (modifications
+manuelle, automatique .. ). Les acteurs intéragissant avec le systeme sont : 
+les membres d'equipage d'un vol et les membres du CCO. Différentes façons de consulter 
+ces informations sont implémentés (version mobile pour les membres d'équipages). Un systeme
+d'alerte est egalement présent pour notifier des informations relatif à un vol.
+** English
+The flight system can be edited by different ways (manual modification, automatic ..).
+The actors who deal with the system are : equipage members of the flight and CCO members.
+Different ways are available for data consulting (mobile interface for equipage members
+and desktop interface for CCO members). A system alert is also present to notify 
+informations concerning a certain flight.
+* Question 2 :
+** Equipage members
+   - Mobile interface
+   - Only data consulting (no edit) 
+** CCO members
+   - Desktop interface 
+   - Can edit data
+* Question 3 :
+** Business Object : 
+  equipage, airplane, aeroport, person, flight
+** Attributes :
+*** equipage
+- ID
+- pilot/co-pilot
+- hostess/steward
+- purser (chef de cabine)
+*** aeroport
+- OACI
+- name
+*** person
+- login
+- type
+- name
+- surname
+- password
+*** Airplane
+- id
+- type
+- weight
+- size
+- capacity
+*** flight
+- commercial number
+- ATC number
+- arrival OACI
+- departure OACI
+- arrival date
+- departure date
+- meteo
+- OFP ?
+- NOTAM ?
+  
+
+* Questions intermédiaires :
+- Est-ce qu'un pilote est aussi un co-pilote (et inversement) ? 
+Réponse trouvée :
+"Malgré son titre quelque peu réducteur, le copilote n’est pas 
+un apprenti qui regarde le commandant de bord faire son travail. 
+En fait, il effectue autant de décollages et d’atterrissages que
+ce dernier. Quelles sont différences entre les deux postes? 
+Le commandant de bord est le responsable de la sécurité des 
+passagers et de l’équipage, prend les décisions (et a un plus 
+gros salaire). Le passage de copilote à commandant de bord est 
+uniquement une question d’ancienneté.
+
+Les pilotes savent donc tous piloter un avion seuls, mais ils ne 
+sont pas censés le faire. Les procédures de vol habituelles sont 
+toutes fondées sur un travail, à deux, de revérification des actions. 
+Le pilotage d’un avion seul demande beaucoup plus de concentration, 
+et de faire plusieurs choses à la fois tout en étant sous pression. 
+Il faut aussi qu’il y ait une personne au poste de pilotage à tout 
+moment, ce qui rend les longues distances difficiles quand un pilote 
+se retrouve seul à bord: il n’est alors même plus censé se lever, 
+pour aller aux toilettes par exemple."
+
+source : http://www.slate.fr/story/28659/pilote-mort-vol-avion     

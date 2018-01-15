@@ -1,0 +1,205 @@
+body{
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.page__inner {
+  max-width: 1140px;
+  margin: 50px auto;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+p{
+  font-size: 18px;
+}
+
+img{
+  height: auto;
+  width: 80%
+}
+
+.inside{
+  padding-top: 20px;
+}
+
+#top-row, #bottom-row{
+  width: 100%;
+  height: 45%;
+}
+
+#bottom-row{
+  margin-bottom: 10px;
+}
+
+#commNumber, #atc{
+  text-align: center;
+  font-size: 18px;
+  color: black;
+  font-weight: bold;
+}
+
+#dep, #arr{
+  display: inline-block;
+  vertical-align: middle;
+  width: 49.5%;
+  text-align: center;
+}
+
+#imgPlane{
+  margin: 0 auto;
+  text-align: center;
+}
+
+#type{
+  text-align: center;
+  font-size: 25px;
+}
+
+#cap p, #poids p{
+  display: inline-block;
+}
+
+#cap, #poids{
+  text-align: center;
+}
+
+#cockpit ul li{
+  display: inline-block;
+  vertical-align: middle;
+  width: 49.5%;
+  text-align: center;
+}
+
+#others{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.space{
+  margin-top: 35px;
+}
+
+.page-title {
+  font-size: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 49.5%;
+  text-align: center;
+}
+
+#tab-2{
+    line-height: 20px;
+}
+
+.widget li {
+  list-style-type: square;
+  margin-bottom: 0px;
+}
+
+.widget_tab{
+  background: white repeat scroll 0 0;
+  box-shadow: 0 4px 10px 4px rgba(19, 35, 47, 0.3);
+  border-radius: 4px;
+  padding-bottom: 0;
+  clear: both;
+  float: left;
+  list-style: outside none none;
+  margin-bottom: 27px;
+  overflow: hidden;
+  width: 100%;
+  list-style: outside none none;
+  vertical-align: baseline;
+}
+
+ul {
+  list-style: outside none none;
+  vertical-align: baseline;
+}
+
+#tabber {
+  display: block;
+  height: auto;
+  margin: 0;
+  overflow: hidden;
+  background-color: #f0f3f5;
+}
+
+#tabber ul.tabs {
+  margin-top: 0;
+  height: 40px;
+  overflow: hidden;
+  padding: 0;
+  text-align: center;
+}
+
+#tabber ul.tabs li {
+  background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+  border-bottom: medium none;
+  cursor: pointer;
+  display: inline;
+  float: left;
+  font-size: 20px;
+  margin-left: 0;
+  padding: 0;
+  text-align: center;
+  width: 33.3%;
+}
+
+#tabber ul.tabs li a {
+  background: none repeat scroll 0 0;
+  background-color: rgba(85, 96, 111, 0.8);
+  display: block;
+  float: left;
+  line-height: 1;
+  margin: 0;
+  padding: 10px 0;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  border-left: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+#tabber ul.tabs li a:hover {
+  background: #696969 none repeat scroll 0 0;
+}
+
+#tabber ul.tabs li a.selected {
+  background: #55606f none repeat scroll 0 0;
+  color: #fff;
+  line-height: 1;
+  margin: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media all and (max-width: 659px)
+{
+  p{
+    font-size: 14px;
+  }
+
+  #tabber ul.tabs li {
+    font-size: 16px;
+  }
+
+  #top-row, #bottom-row, #cockpit{
+    text-align: center;
+  }
+
+  #cockpit ul li{
+    margin-left: -15px;
+  }
+
+  .page-title{
+    width: 100%;
+  }
+
+  h1{
+    font-size: 22px;
+  }
+}

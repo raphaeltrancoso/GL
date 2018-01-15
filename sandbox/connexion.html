@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="connexion.css" />
+    <script src="http://code.jquery.com/jquery-1.11.2.js"></script>
+    <title>Connexion Mini-chat</title>
+  </head>
+  <body>
+    <h1 class="relative" id="bonjour">Bienvenu &agrave; la page d'acc&egrave;s au mini-chat</h1>
+      <section>
+        <div id="connexion">
+	  <h2>Connexion</h2>
+	  <section>
+	    <form>
+	      <div><label class="forme">Identifiant :</label><input type="text" id="id" /></div>
+	      <div><label class="forme">Mot de passe :</label><input type="password" id="mdp" /></div>
+	      <input type="submit" value="Envoyer" disabled="disabled" id="envoyer" />
+	      <span id="erreur"></span>
+	    </form>
+	  </section>
+	</div>
+	<div id="inscription">
+	  <h2>Inscription</h2>
+	  <section>
+	    <input type="submit" value="S'inscrire" id="inscrire">
+	    <div id="formulaire" class="cacher">
+	      <form id="formulaire">
+	        <div class="rouge">
+		  <label class="forme">Etat civil :</label>
+		  <input id="radio1" name="groupe" type="radio" value="M." />
+		  <label for="radio1">M.</label>
+		  <input id="radio2" name="groupe" type="radio" value="Mme" />
+		  <label for="radio2">Mme</label>
+		</div>
+	        <div class="rouge"><label class="forme">Nom :</label><input type="text" id="nom"></div>
+		<div class="rouge"><label class="forme">Pr&eacute;nom :</label><input type="text" id="prenom"></div>
+		<div><label class="forme">Nom complet :</label><input type="text" id="complet"></div>
+		<div class="rouge"><label class="forme">Nom de login :</label><input type="text" id="login"></div>
+		<div class="rouge"><label class="forme">Mot de passe :</label><input type="password" id="mdp2" /></div>
+		<div class="violet"><label class="forme">Mot de passe : (confirmation)</label><input type="password" id="mdp3" /></div>
+		<div><label class="forme">Afficher mot de passe :</label><input type="checkbox" value="oui" id="afficher"/></div>
+		<input type="button" value="R&eacute;initialiser" id="reinitialiser" />
+		<input type="button" value="Envoyer" disabled="disabled" id="envoyer2" />
+		<span id="erreur2"></span>
+	      </form>
+	    </div>
+	  </section>
+	</div>
+     </section>
+    <script src="connexion.js"></script>
+  </body>
+</html>

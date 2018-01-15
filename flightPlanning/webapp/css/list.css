@@ -1,0 +1,354 @@
+@import url(common.css);
+
+/* style.css of scheduled flight */
+body {
+  background: url("../img/sky_color_line.jpg") no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0px;
+}
+
+/**
+  * Search Div
+  */
+.search-container {
+  padding-top: 30px;
+  text-align : center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+#buttonSearch{
+  margin-left: 12.5%;
+  text-align: center;
+  font-family: 'Titillium Web', sans-serif;
+  text-decoration: none;
+  color : white;
+  line-height: 2.25;
+  position : absolute;
+  width: 19.7rem;
+  height: 3.5rem;
+  color: white;
+  background: #4E5968;
+  font-size: 1.5rem;
+  border-radius: .5em;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#buttonSearch:hover{
+  text-decoration: none;
+  color : grey;
+}
+
+label {
+  width: 160px;
+  display: inline-block;
+  text-align: right;
+}
+
+label:after {
+  content: "\00a0:\00a0";
+  display: inline-block;
+}
+
+input {
+  box-sizing: border-box;
+  height: 35px;
+  border-radius: 7px;
+  display: inline-block;
+  width: 200px;
+  border: 1px #dadada solid;
+  padding: 2px 4px;
+}
+
+/**
+  * FlightList in table
+  */
+table {
+  border-collapse: separate;
+  background: #fff;
+  border-radius: 5px 5px 0px 0px;
+  margin: 100px auto 0px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+thead {
+  border-radius: 5px;
+}
+
+thead th {
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 20px;
+  border-top: 1px solid #858d99;
+  background-size: 100%;
+  background-image: linear-gradient(#646f7f, #4a5564);
+}
+
+thead th:first-child {
+  border-top-left-radius: 5px;
+}
+
+thead th:last-child {
+  border-top-right-radius: 5px;
+}
+
+tbody tr td {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  color: #5f6062;
+  font-size: 14px;
+  padding: 20px 20px 20px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  text-align: center;
+}
+
+tbody tr:nth-child(2n) {
+  background: #f0f3f5;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr:last-child td:first-child {
+  border-bottom-left-radius: 5px;
+}
+
+tbody tr:last-child td:last-child {
+  border-bottom-right-radius: 5px;
+}
+
+tbody:hover > tr td {
+  opacity: 0.3;
+  color: transparent;
+  text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+
+}
+
+tbody:hover > tr:hover td {
+  color: white;
+  opacity: 1;
+  background: #1ab188;
+  cursor: pointer;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.edit, .delete {
+  height: 20px;
+  width: 20px;
+}
+
+/**
+  * Pagination
+  */
+.pagination{
+  background-color: white;
+  border-radius: 0px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  padding-top: 12px;
+  display: block;
+}
+
+#pagi-left, #pagi-center, #pagi-right{
+  width: 33%;
+  display: inline-block;
+}
+
+#pagi-left{
+  text-align: left;
+  padding-left: 10px;
+}
+
+#pagi-center{
+  text-align: center;
+}
+
+#pagi-right{
+  text-align: right;
+  padding-right: 9px;
+}
+
+#page{
+  width: 50px;
+  text-align: right;
+  border-radius: 0px;
+  border-style: none;
+}
+
+
+@media all and (max-width: 659px)
+{
+  body {
+    background: url("../img/sky_color_line.jpg") no-repeat fixed;
+    margin: 0px;
+    width: 500px;
+  }
+
+  /**
+    * Search Div
+    */
+  .search-container {
+    padding-top: 10px;
+    text-align : center;
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  #buttonSearch{
+    margin-left: 12.5%;
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    text-decoration: none;
+    color : white;
+    line-height: 2.25;
+    position : absolute;
+    width: 19.7rem;
+    height: 3.5rem;
+    color: white;
+    background: #4E5968;
+    font-size: 1.5rem;
+    border-radius: .5em;
+    cursor: pointer;
+    overflow: hidden;
+  }
+
+  #buttonSearch:hover{
+    text-decoration: none;
+    color : grey;
+  }
+
+  label {
+    width: 160px;
+    display: inline-block;
+    text-align: right;
+  }
+
+  label:after {
+    content: "\00a0:\00a0";
+    display: inline-block;
+  }
+
+  input {
+    box-sizing: border-box;
+    height: 35px;
+    border-radius: 7px;
+    display: inline-block;
+    width: 200px;
+    border: 1px #dadada solid;
+    padding: 2px 4px;
+  }
+
+  #lastP{
+    margin-left: 5%;
+    text-align: left;
+  }
+
+  /**
+    * FlightList in table
+    */
+  table {
+    border-collapse: separate;
+    background: #fff;
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+    margin: 100px auto 0px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  }
+
+  thead {
+    border-radius: 5px;
+  }
+
+  thead th {
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #858d99;
+    background-size: 100%;
+    background-image: linear-gradient(#646f7f, #4a5564);
+  }
+
+  thead th:first-child {
+    border-top-left-radius: 5px;
+  }
+
+  thead th:last-child {
+    border-top-right-radius: 5px;
+  }
+
+  tbody tr td {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #5f6062;
+    font-size: 14px;
+    padding: 20px 20px 20px 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  tbody tr:nth-child(2n) {
+    background: #f0f3f5;
+  }
+
+  tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  tbody tr:last-child td:first-child {
+    border-bottom-left-radius: 5px;
+  }
+
+  tbody tr:last-child td:last-child {
+    border-bottom-right-radius: 5px;
+  }
+
+  tbody:hover > tr td {
+    opacity: 0.3;
+    color: transparent;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.8);
+
+  }
+
+  tbody:hover > tr:hover td {
+    color: white;
+    opacity: 1;
+    background: #1ab188;
+    cursor: pointer;
+  }
+
+  img:hover{
+    cursor: pointer;
+  }
+
+  .edit, .delete {
+    height: 20px;
+    width: 20px;
+  }
+
+  /**
+    * Pagination
+    */
+  .pagination{
+    margin-top: 10px;
+    position : relative;
+    width: 510px;
+    left : -2%;
+  }
+
+}

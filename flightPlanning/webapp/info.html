@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Flight information</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/info.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href='css/fontTitilliumWeb.css' rel='stylesheet' type='text/css'>
+    
+  </head>
+  <body>
+    <nav id="menu">
+      <ul>
+        <li class="nav-item"><a href="list.html">Home</a></li>
+        <li class="nav-item"><a href="add.html">Add flight</a></li>
+        <li class="nav-item" style="position: absolute;right:10px;">
+            <a id="logout" href="index.html">Log out</a>
+            <img src="img/logout.png" alt="logout" style="width:25px;height:20px;"/>
+        </li>
+      </ul>
+    </nav>
+
+	<div id="sidebar" class="">
+		<ul>
+			<li id="details" class="li_style tabActive">Flight Details</li>
+			<li id="weather" class="li_style">Weather</li>
+			<li id="ofp" class="li_style">OFP</li>
+			<li id="notam" class="li_style">NOTAM</li>
+		</ul>
+  </div>
+
+
+  <div id="contenu" class="">
+    <object id="htmlClass" data="flightDetails.html"></object>
+  </div>
+
+  <div id="sidebar-btn">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+	
+	<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="js/info.js"></script>
+  </body>
+</html>

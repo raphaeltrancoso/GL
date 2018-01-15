@@ -1,0 +1,170 @@
+@import url(common.css);
+
+body{
+	font-family: 'Titillium Web', sans-serif;
+  	margin: 0px;
+  	background:rgba(0, 0, 0, 0) url("../img/sky_color_line.jpg") no-repeat fixed center center;
+  	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#menu {
+	height: 50px;
+}
+
+object{
+	height: 800px;
+	width: 100%;
+}
+
+#sidebar{
+	background:#323232;
+	width:300px;
+	height:100%;
+	display:block;
+	position:absolute;
+	left:-300px;
+	top:50px;
+	opacity: 0.4;
+	transition-property: opacity left;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+	font-size: large;
+	font-weight: 400;
+	font-family: 'Titillium Web', sans-serif;
+	text-align: center;
+}
+
+#sidebar.visible{
+	left: 0px;
+	opacity: 0.9;
+	transition-property: opacity left;
+	transition-duration: 0.3s;
+	transition-timing-function: linear;
+}
+
+#sidebar ul {
+	margin: 0px 0px;
+	padding: 0px;
+}
+
+#logoutRef {
+	margin-right: 10px;
+}
+
+.li_style{
+	list-style:none;
+	width: 350px;
+	height: 56px;
+	margin-left: -50px;
+	text-align: center;
+	color: white;
+	padding: 12px;
+  	font-size: 22px;
+}
+
+.li_style:not(.tabActive):hover{
+	background-color: rgba(160, 179, 176, 0.25);
+	color: white;
+	cursor: pointer;
+}
+
+.tabActive {
+	background-color: #424A57;
+	color: white;
+}
+
+#sidebar ul li a {
+	background:#323232;
+	color:#ccc;
+	border-bottom:1px solid #323232;
+	display:block;
+	width:200px;
+	padding:10px;
+	text-decoration: none;
+}
+
+#sidebar-btn{
+	display:inline-block;
+	vertical-align: middle;
+	width:30px;
+	height:30px;
+	cursor:pointer;
+	margin:20px;
+	position:absolute;
+	top: 0px;
+	left: 5px;
+}
+
+#sidebar-btn span{
+	height:1px;
+	background:white;
+	margin-bottom:5px;
+	display:block;
+}
+
+.page__inner {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+h1{
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.space{
+  margin-top: 35px;
+}
+
+.page-title {
+  font-size: 35px;
+  text-transform: uppercase;
+  padding: 1rem 0;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.widget {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  height: 270px;
+  position: relative;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+.widget .widget__half {
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 1 35%;
+  -ms-flex: 0 1 35%;
+  flex: 0 1 35%;
+  border-radius: 20px;
+  border: solid 3px;
+  border-color: green;
+  background: rgba(231, 238, 243, 0.9);
+}
+
+.page__content {
+  position: relative;
+  background: #fff;
+  height: 10000px;
+  padding: 2rem 0;
+}
+
+#htmlClass {
+	margin: -17px auto;
+}
+
+#htmlClass > html body {
+	margin: 50px auto;
+	text-align: center;
+	font-size: 20px;
+}

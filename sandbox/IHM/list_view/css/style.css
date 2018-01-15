@@ -1,0 +1,120 @@
+@import url(../../Model/css/style.css);
+
+/* style.css of ScheduledFlight */
+
+body {
+  font-family: Avenir, "Open Sans", "Helvetica neue", sans-serif;
+  font-size: 12px;
+  margin: 0px;
+}
+
+header{
+  font-size: 12px;
+}
+
+form {
+  width: 740px;
+  margin: 0 auto;
+}
+
+fieldset {
+  border-radius: 8px;
+  margin-bottom: 20px;
+  position:relative;
+  padding-top:50px;
+}
+
+legend {
+   font-weight: bold;
+   position:absolute;
+   top:20px;
+   left:18px;
+}
+
+label {
+  width: 160px;
+  display: inline-block;
+  text-align: left;
+}
+
+label:after {
+  content: "\00a0:\00a0";
+  display: inline-block;
+}
+
+p {
+  margin-left: 150px;
+}
+
+input:not([type="submit"]) {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  height: 35px;
+}
+
+select{
+  height: 32px;
+  width: 202px;
+}
+
+input:not([type="submit"]) {
+  border-radius: 7px;
+}
+
+textarea, input:not([type="submit"]):not([type="radio"]):not([type="checkbox"]):not([type="file"])  {
+  display: inline-block;
+  width: 200px;
+  border: 1px #dadada solid;
+  padding: 2px 4px;
+}
+
+input[type="search"] {
+  padding: 2px 10px;
+}
+
+input[type="submit"] {
+  margin-left: 175px;
+  display: inline-block;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 10px 20px;
+  background: #DDD;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer; 
+}
+
+
+.active:nth-child(even) {
+  background-color: #efeff5;
+}
+
+tr:hover, .active:hover {
+  background: #80b3ff;
+  border: 1px solid black;
+  outline-style: solid;
+  outline-color: blue;
+  color: white;
+}
+
+.btn
+{
+  display: inline-block;
+}
+
+:required{
+  /* Champs required */
+}
+
+:optionnal {
+  /* Champs optionnels */
+}
+
+:invalid {
+  /* Champs invalides */
+}
+
+:valid {
+  /* Valides */
+}
